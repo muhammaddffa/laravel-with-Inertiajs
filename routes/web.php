@@ -15,12 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    sleep(2);
     return Inertia::render('Home');
 });
 
 Route::get('/users', function () {
+    sleep(2);
     // return Inertia::render('User/all');
-    $user= [
+    $user = [
         'name' => 'ichi',
         'age' => 20
     ];
